@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoback"
+    tools:context=".MainActivity7">
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponentes"
+        android:layout_width="367dp"
+        android:layout_height="236dp"
+        app:layout_constraintBottom_toTopOf="@+id/ansA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/container"
+        style="@style/ContainerComponentes"
+        android:layout_width="335dp"
+        android:layout_height="425dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ansA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/X"
+        android:text="Brasil"
+        app:layout_constraintBottom_toTopOf="@+id/ansB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltar"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ansB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="@color/X"
+        android:text="Finlândia"
+        app:layout_constraintBottom_toTopOf="@+id/ansC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansA"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ansC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="@color/X"
+        android:text="Luxemburgo"
+        app:layout_constraintBottom_toTopOf="@+id/ansD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansB" />
+
+    <Button
+        android:id="@+id/ansD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/X"
+        android:text="Paraguai"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansC" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="145dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="277dp"
+        android:backgroundTint="@color/XXX"
+        android:fontFamily="@font/inknut_antiqua"
+        android:text="Voltar"
+        android:textColor="@color/X"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/ansA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="359dp"
+        android:layout_height="114dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

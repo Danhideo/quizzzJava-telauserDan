@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/globo"
+    android:clickable="true"
+    android:contextClickable="false"
+    android:focusable="true"
+    android:onClick="abrirTelaPrincipal"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/containershadow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gotosecondscreen"
+        android:layout_width="500dp"
+        android:layout_height="890dp"
+        android:clickable="true"
+        android:contentDescription="@string/back"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="@+id/containershadow2"
+        app:layout_constraintTop_toTopOf="@+id/containershadow2"
+        app:srcCompat="@drawable/grad" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="59dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="61dp"
+        android:contentDescription="@string/shadowbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/shadowbutton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="422dp"
+        android:fontFamily="@font/inknut_antiqua"
+        android:text="@string/geo"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="338dp"
+        android:fontFamily="@font/inknut_antiqua"
+        android:text="@string/quiz"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="71dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:onClick="abrirTelaNome"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
